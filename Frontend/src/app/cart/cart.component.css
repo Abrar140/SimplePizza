@@ -1,0 +1,48 @@
+/* Slip container */
+.slip {
+  width: 300px;
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px dashed #000;
+  background: #fff;
+  font-family: 'Courier New', monospace; /* Receipt-style font */
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Header */
+.slip-header {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed #000;
+  padding-bottom: 5px;
+}
+
+/* Line item */
+.line {
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+/* Divider line between pizzas */
+.divider {
+  border-bottom: 1px dashed #aaa;
+  margin: 8px 0;
+}
+
+/* Total */
+.total {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 2px solid #000;
+  font-size: 16px;
+  text-align: right;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 13px;
+  font-style: italic;
+}

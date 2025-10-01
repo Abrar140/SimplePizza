@@ -1,0 +1,19 @@
+<div *ngFor="let feedback of feedback$ | async" class="feedback-card">
+  <h3 class="feedback-name">{{ feedback.fullName }}</h3>
+
+  <div class="feedback-info">
+    <p><span class="label">Email:</span> {{ feedback.email }}</p>
+    <p><span class="label">Phone:</span> {{ feedback.phone.phoneNumber }} ({{ feedback.phone.phoneType }})</p>
+    <p><span class="label">Date of Visit:</span> {{ feedback.dateOfVisit | date }}</p>
+    <p><span class="label">Favorite Pizza:</span> {{ feedback.favoritePizza }}</p>
+    <p><span class="label">Rating:</span> ⭐ {{ feedback.rating }}/5</p>
+    <p><span class="label">Service Satisfaction:</span> {{ feedback.serviceSatisfaction }}/10</p>
+    <p><span class="label">Would Recommend:</span> 
+      <span [ngClass]="feedback.wouldRecommend ? 'yes' : 'no'">
+        {{ feedback.wouldRecommend ? 'Yes' : 'No' }}
+      </span>
+    </p>
+    <p><span class="label">Liked Toppings:</span> {{ feedback.likedToppings.join(', ') }}</p>
+    <p><span class="label">Comments:</span> {{ feedback.comments }}</p>
+  </div>
+</div>

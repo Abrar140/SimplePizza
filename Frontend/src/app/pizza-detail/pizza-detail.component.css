@@ -1,0 +1,94 @@
+/* Grid container */
+.pizza-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Card styling */
+.pizza-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  font-family: Arial, sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.pizza-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Pizza image */
+.pizza-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* Title */
+.pizza-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Price */
+.pizza-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ff5722;
+  margin-bottom: 6px;
+}
+
+/* Other details */
+.pizza-category,
+.pizza-rating,
+.pizza-sizes,
+.pizza-types,
+.pizza-id {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+/* Actions */
+.pizza-actions {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Cart button */
+.btn-cart {
+  background-color: #ff9800;
+  color: white;
+}
+
+.btn-cart:hover {
+  background-color: #e68900;
+}
+
+/* Favourite button */
+.btn-fav {
+  background-color: #e91e63;
+  color: white;
+}
+
+.btn-fav:hover {
+  background-color: #c2185b;
+}

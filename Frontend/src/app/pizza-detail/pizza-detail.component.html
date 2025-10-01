@@ -1,0 +1,24 @@
+    <div class="pizza-id">ID: {{ pizza.id }}</div>
+
+    <div class="pizza-image">
+      <img [src]="pizza.imageUrl" alt="{{ pizza.title }}" />
+    </div>
+
+    <div class="pizza-title">{{ pizza.title }}</div>
+
+    <div class="pizza-price">Price: {{ pizza.price | currency:'PKR' }}</div>
+
+    <div class="pizza-category">Category: {{ pizza.category }}</div>
+
+    <div class="pizza-rating">Rating: {{ pizza.rating }}</div>
+
+    <div class="pizza-sizes">Sizes: {{ pizza.sizes.join(', ') }}</div>
+
+    <div class="pizza-types">Types: {{ pizza.types.join(', ') }}</div>
+
+    <div class="pizza-actions">
+      <button class="btn-cart" (click)="BuyButtonClicked(pizza)">Add to Cart</button>
+      <button class="btn-fav"  *ngIf="!isFavouriteView" (click)="FavouriteButtonClicked(pizza)">Add to Favourite</button>
+        <button class="btn-fav"  *ngIf="isFavouriteView" (click)="RemoveFavouriteButtonClicked(pizza)">Remove from Favourite</button>
+
+    </div>

@@ -1,0 +1,60 @@
+<div class="navbar">
+  <!-- Home with Categories -->
+  <div class="nav-item">
+    <button
+      [routerLink]="ROUTER_TOKENS.HOME"
+      class="nav-btn"
+      routerLinkActive="active-link"
+    >
+      Home
+    </button>
+    <ol class="dropdown">
+      <li>
+        <button [routerLink]="[ROUTER_TOKENS.HOME, 'Classics-and-Veggie']">
+          Classics & Veggie
+        </button>
+      </li>
+      <li>
+        <button [routerLink]="[ROUTER_TOKENS.HOME, 'Meat-Lovers']">
+          Meat Lovers
+        </button>
+      </li>
+      <li>
+        <button [routerLink]="[ROUTER_TOKENS.HOME, 'Chicken']">Chicken</button>
+      </li>
+      <li>
+        <button [routerLink]="[ROUTER_TOKENS.HOME, 'All']">All</button>
+      </li>
+    </ol>
+  </div>
+
+  <!-- Other main buttons -->
+  <button
+    [routerLink]="ROUTER_TOKENS.FAVOURITE"
+    class="nav-btn"
+    routerLinkActive="active-link"
+  >
+    Favourite
+  </button>
+  <button
+    [routerLink]="ROUTER_TOKENS.CART"
+    class="nav-btn"
+    routerLinkActive="active-link"
+  >
+    Cart
+  </button>
+  <button
+    [routerLink]="ROUTER_TOKENS.FEEDBACK"
+    class="nav-btn"
+    routerLinkActive="active-link"
+  >
+    Feedback
+  </button>
+  <button
+    [routerLink]="ROUTER_TOKENS.REVIEW"
+    class="nav-btn"
+    routerLinkActive="active-link"
+  >
+    Review
+  </button>
+</div>

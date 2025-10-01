@@ -1,0 +1,48 @@
+<div class="pizzas-container">
+  <h2>All Pizzas</h2>
+
+  <!-- Empty list check -->
+  <div *ngIf="pizzas.length === 0">
+    <p>No pizzas available right now 🍕</p>
+  </div>
+
+  <!-- Pizza List -->
+  <div class="pizza-list">
+    <div class="pizza-card" *ngFor="let pizza of pizzas">
+      <img [src]="getSafeUrl(pizza.imageUrl)" alt="{{ pizza.title }}" />
+      <h3>{{ pizza.title }}</h3>
+      <p>⭐ Rating: {{ pizza.rating }}</p>
+      <p>Category: {{ pizza.category?.categoryName }}</p>
+      <p>Sizes: {{ pizza.sizes.join(', ') }}</p>
+      <p>Prices: {{ pizza.price.join(', ') }}</p>
+
+      <!-- Delete button -->
+      <button (click)="DeletePizza(pizza.pizzaId)" class="delete-btn">
+        🗑️ Delete
+      </button>
+
+      <!-- Edit button -->
+      <button (click)="editPizza(pizza)" class="edit-btn">
+        ✏️ Edit
+      </button>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- Add / Update Pizza Form -->
+  <h3>{{ editingPizza ? "Update Pizza" : "Add New Pizza" }}</h3>
+
+  <form (ngSubmit)="onSubmitPizza()">
+    <input type="text" placeholder="Title" [(ngModel)]="pizzaForm.title" name="title" required />
+    <input type="text" placeholder="Image URL" [(ngModel)]="pizzaForm.imageUrl" name="imageUrl" />
+    <input type="number" placeholder="Rating" [(ngModel)]="pizzaForm.rating" name="rating" />
+    <input type="text" placeholder="Sizes (comma separated)" [(ngModel)]="pizzaForm.sizes" name="sizes" />
+    <input type="text" placeholder="Prices (comma separated)" [(ngModel)]="pizzaForm.price" name="price" />
+    <input type="number" placeholder="Category Id" [(ngModel)]="pizzaForm.categoryId" name="categoryId" required />
+
+    <button type="submit">
+      {{ editingPizza ? "Update" : "Add" }} Pizza
+    </button>
+  </form>
+</div>

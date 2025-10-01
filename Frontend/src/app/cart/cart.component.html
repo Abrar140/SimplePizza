@@ -1,0 +1,22 @@
+<div class="slip">
+  <h2 class="slip-header">🧾 Order Slip</h2>
+  <div class="cart-container">
+    <div *ngFor="let pizza of getCart()" class="cart-card">
+      <div class="line">ID: {{ pizza.id }}</div>
+      <div class="line">Name: {{ pizza.title }}</div>
+      <div class="line">Price: {{ pizza.price | currency:'PKR' }}</div>
+      <div class="line">Category: {{ pizza.category }}</div>
+      <div class="line">Rating: {{ pizza.rating }}</div>
+      <div class="line">Sizes: {{ pizza.sizes.join(', ') }}</div>
+      <div class="line">Types: {{ pizza.types.join(', ') }}</div>
+      <button (click)="removePizzaFromCart(pizza)">Remove</button>
+      <div>Quantity:{{pizza.quantity}}</div>
+      <div class="divider"></div>
+    </div>
+  </div>
+
+  <div class="total">
+    <strong>Total Price: {{ getTotalPrice() | currency:'PKR' }}</strong>
+  </div>
+  <div class="footer">Thank you for your order!</div>
+</div>

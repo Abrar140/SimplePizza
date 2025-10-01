@@ -1,0 +1,17 @@
+<div class="pizza-grid">
+    <div *ngFor="let pizza of getFavourite()" class="pizza-card">
+      <!-- <div class="line">ID: {{ pizza.id }}</div>
+      <div class="line">Name: {{ pizza.title }}</div>
+      <div class="line">Price: {{ pizza.price | currency:'PKR' }}</div>
+      <div class="line">Category: {{ pizza.category }}</div>
+      <div class="line">Rating: {{ pizza.rating }}</div>
+      <div class="line">Sizes: {{ pizza.sizes.join(', ') }}</div>
+      <div class="line">Types: {{ pizza.types.join(', ') }}</div>
+      <button (click)="removePizzaFromFavourite(pizza)">Remove</button>
+      <button>Add to Cart</button> -->
+      <app-pizza-detail [pizza]="pizza" (buy)="addToCart(pizza) "  [isFavouriteView]="true" (nonfavourite)="removePizzaFromFavourite(pizza)"></app-pizza-detail>
+      <button  [routerLink]="['./']"   [queryParams]="{category:pizza.category}"  queryParamsMerge="merge"> Click ME</button>
+    </div>
+  </div>
+
+  

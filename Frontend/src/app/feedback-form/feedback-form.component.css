@@ -1,0 +1,167 @@
+/* Container */
+.container {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #ffffff, #f9f9ff);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.form-title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Form */
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #34495e;
+}
+
+/* Inputs, selects, textareas */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #fff;
+  transition: all 0.25s ease;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+/* Textarea */
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Checkbox group */
+.checkbox-group {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Error messages */
+em {
+  display: inline-block;
+  background: #ffe5e5;
+  color: #d93025;
+  font-size: 0.85rem;
+  margin-top: 6px;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+/* Phone row */
+.phone-row {
+  display: flex;
+  gap: 16px;
+}
+
+.phone-row .phone-input,
+.phone-row .phone-type {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Range group */
+.range-group .range-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.range-group input[type="range"] {
+  flex: 1;
+}
+
+.range-group .current-value {
+  font-weight: 600;
+  color: #007bff;
+  min-width: 24px;
+  text-align: center;
+}
+
+/* Form actions */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+  margin-top: 15px;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Save button */
+.btn.save {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+}
+
+.btn.save:hover:not(:disabled) {
+  background: linear-gradient(135deg, #0056b3, #004099);
+  box-shadow: 0 4px 12px rgba(0,123,255,0.4);
+}
+
+.btn.save:disabled {
+  background: #a1c5f3;
+  cursor: not-allowed;
+}
+
+/* Cancel button */
+.btn.cancel {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.btn.cancel:hover {
+  background: #e0e0e0;
+}
+
+/* Saving button */
+.btn.saving {
+  background: #ffc107;
+  color: #333;
+  cursor: not-allowed;
+}

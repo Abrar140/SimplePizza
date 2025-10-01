@@ -1,0 +1,46 @@
+# Build outputs
+bin/
+obj/
+out/
+[Bb]uild/
+[Ll]og/
+
+# User-specific files
+*.user
+*.suo
+*.sln.docstates
+
+# IDE settings
+.vscode/
+.idea/
+
+# Publish profiles
+*.publishsettings
+PublishProfiles/
+
+# Logs and crash dumps
+*.log
+*.tlog
+*.dmp
+
+# NuGet packages
+*.nupkg
+packages/
+project.lock.json
+
+# ASP.NET cache / runtime
+wwwroot/lib/
+wwwroot/node_modules/
+wwwroot/dist/
+
+# Environment files (❗ keep them out of git)
+.env
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# Temporary / misc
+*.bak
+*.tmp
+*.swp
+*.db
