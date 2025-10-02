@@ -6,7 +6,7 @@ import { RouterLink } from "@angular/router";
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
-  // imports: [RouterLink]
+  imports: [RouterLink]
 })
 export class HeaderComponent {
   readonly ROUTER_TOKENS=ROUTER_TOKEN;

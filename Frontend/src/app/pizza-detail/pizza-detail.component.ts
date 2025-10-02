@@ -4,7 +4,8 @@ import { Pizza } from '../home/pizza.model';
 @Component({
   selector: 'app-pizza-detail',
   templateUrl: './pizza-detail.component.html',
-  styleUrls: ['./pizza-detail.component.css']
+  styleUrls: ['./pizza-detail.component.css'],
+  standalone:true,
 })
 export class PizzaDetailComponent {
   @Input() pizza!:Pizza;

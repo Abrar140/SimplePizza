@@ -9,7 +9,7 @@ import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
   standalone: true,
    imports: [CommonModule, FormsModule], 
   templateUrl: './all-product.component.html',
-  styleUrl: './all-product.component.css'
+  styleUrls: ['./all-product.component.css'],
 })
 export class AllProductComponent implements OnInit {
 
@@ -44,10 +44,13 @@ export class AllProductComponent implements OnInit {
      })
   }
   DeletePizza(id :number){
+    const confirmed= window.confirm('Are you sure you want to dlete this Pizza?');
+    if(confirmed){
     this.pizzaService.deletePizza(id).subscribe(()=>{
       this.pizzas=this.pizzas.filter(p=>p.pizzaId!==id);
       console.log('Pizza is delted')
     })
+  }
   }
 
    AddaPizza(pizza:any){

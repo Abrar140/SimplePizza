@@ -4,5 +4,6 @@ export enum ROUTER_TOKEN {
   CART = 'cart',
   FEEDBACK = 'feedback',
   NOTFOUND = 'notfound',
-  REVIEW='review'
+  REVIEW='review',
+  ALLPRODUCTS='allProduct'
 }

@@ -1,0 +1,15 @@
+D:\AngularLearning\my-pizza-shop\Backend\Pizza.Data\obj\Debug\net8.0\Pizza.Data.csproj.AssemblyReference.cache
+D:\AngularLearning\my-pizza-shop\Backend\Pizza.Data\obj\Debug\net8.0\Pizza.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\AngularLearning\my-pizza-shop\Backend\Pizza.Data\obj\Debug\net8.0\Pizza.Data.AssemblyInfoInputs.cache
+D:\AngularLearning\my-pizza-shop\Backend\Pizza.Data\obj\Debug\net8.0\Pizza.Data.AssemblyInfo.cs
+D:\AngularLearning\my-pizza-shop\Backend\Pizza.Data\obj\Debug\net8.0\Pizza.Data.csproj.CoreCompileInputs.cache
+D:\AngularLearning\my-pizza-shop\Backend\Pizza.Data\obj\Debug\net8.0\Pizza.Data.sourcelink.json
+D:\AngularLearning\my-pizza-shop\Backend\Pizza.Data\bin\Debug\net8.0\Pizza.Data.deps.json
+D:\AngularLearning\my-pizza-shop\Backend\Pizza.Data\bin\Debug\net8.0\Pizza.Data.runtimeconfig.json
+D:\AngularLearning\my-pizza-shop\Backend\Pizza.Data\bin\Debug\net8.0\Pizza.Data.dll
+D:\AngularLearning\my-pizza-shop\Backend\Pizza.Data\bin\Debug\net8.0\Pizza.Data.pdb
+D:\AngularLearning\my-pizza-shop\Backend\Pizza.Data\obj\Debug\net8.0\Pizza.Data.dll
+D:\AngularLearning\my-pizza-shop\Backend\Pizza.Data\obj\Debug\net8.0\refint\Pizza.Data.dll
+D:\AngularLearning\my-pizza-shop\Backend\Pizza.Data\obj\Debug\net8.0\Pizza.Data.pdb
+D:\AngularLearning\my-pizza-shop\Backend\Pizza.Data\obj\Debug\net8.0\Pizza.Data.genruntimeconfig.cache
+D:\AngularLearning\my-pizza-shop\Backend\Pizza.Data\obj\Debug\net8.0\ref\Pizza.Data.dll

@@ -1,0 +1,27 @@
+# Build folders
+bin/
+obj/
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+*.opencover
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code / IDE settings
+.vscode/
+*.code-workspace
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Others
+*.vs/

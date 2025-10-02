@@ -6,7 +6,9 @@ import { FeedbackFormService } from './feedback-form.service';
 @Component({
   selector: 'app-feedback-form',
   templateUrl: './feedback-form.component.html',
-  styleUrls: ['./feedback-form.component.css']
+  styleUrls: ['./feedback-form.component.css'],
+    standalone:true
+
 })
 export class FeedbackFormComponent {
   phoneTypes=phoneTypeValues;

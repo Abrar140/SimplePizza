@@ -1,0 +1,30 @@
+# Build Folders
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code / IDE settings
+.vscode/
+*.code-workspace
+
+# Logs
+*.log
+
+# ASP.NET Core / web generated files
+wwwroot/
+appsettings.Development.json
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# EF Core migrations (optional, uncomment if you want to ignore)
+# Migrations/
+
+# Others
+*.vs/

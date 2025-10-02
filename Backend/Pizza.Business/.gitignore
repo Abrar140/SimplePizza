@@ -1,0 +1,20 @@
+# Build Folders
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code / IDE settings
+.vscode/
+*.code-workspace
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Others
+*.vs/

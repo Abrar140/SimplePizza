@@ -13,29 +13,43 @@ import { FeedbackFormComponent } from './feedback-form/feedback-form.component';
 import { FormsModule } from '@angular/forms';
 import { RestrictedWords } from './validation/restricted-words.validator';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { AllProductComponent } from './all-product/all-product.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent,
-    FavouriteComponent,
-    CartComponent,
-    HeaderComponent,
-    PizzaDetailComponent,
-    FeedbackFormComponent,
-    RestrictedWords
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-        HttpClientModule,
         FormsModule,
         RouterOutlet,
-        RouterLink
+        RouterLink,
+            MatDialogModule,
+    MatSnackBarModule,
+            HttpClientModule,
+//standalone
+
+    //             AppComponent,
+    // HomeComponent,
+    // FavouriteComponent,
+    // CartComponent,
+    // HeaderComponent,
+    // PizzaDetailComponent,
+    // FeedbackFormComponent,
+    // RestrictedWords
+
+    AllProductComponent
+
         
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  // bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+

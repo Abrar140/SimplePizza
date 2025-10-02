@@ -1,9 +1,8 @@
 <div class="container">
   <h1 class="form-title">Feedback Form</h1>
 
-  <form class="feedback-form" (ngSubmit)="saveFeedback(feedbackForm)" #feedbackForm="ngForm">
+  <!-- <form class="feedback-form" (ngSubmit)="saveFeedback(feedbackForm)" #feedbackForm="ngForm">
 
-    <!-- Full Name -->
     <div class="form-group">
       <label>Full Name:</label>
       <input 
@@ -22,7 +21,6 @@
       </em>
     </div>
 
-    <!-- Email -->
     <div class="form-group">
       <label>Email:</label>
       <input 
@@ -40,7 +38,6 @@
       </em>
     </div>
 
-    <!-- Phone Row -->
     <div class="form-group phone-row" ngModelGroup="phone">
       <div class="phone-input">
         <label>Phone Number:</label>
@@ -78,13 +75,11 @@
       </div>
     </div>
 
-    <!-- Date of Visit -->
     <div class="form-group">
       <label>Date of Visit:</label>
       <input type="date" [(ngModel)]="feedback.dateOfVisit" name="dateOfVisit" />
     </div>
 
-    <!-- Favorite Pizza -->
     <div class="form-group">
       <label>Favorite Pizza:</label>
       <select [(ngModel)]="feedback.favoritePizza" name="favoritePizza">
@@ -94,7 +89,6 @@
       </select>
     </div>
 
-    <!-- Rating -->
     <div class="form-group">
       <label>Rating (1–5):</label>
       <input 
@@ -114,7 +108,6 @@
       </em>
     </div>
 
-    <!-- Service Satisfaction -->
     <div class="form-group range-group">
       <label>Service Satisfaction:</label>
       <div class="range-wrapper">
@@ -131,7 +124,6 @@
       </div>
     </div>
 
-    <!-- Would Recommend -->
     <div class="form-group checkbox-group">
       <label>
         <input 
@@ -143,7 +135,6 @@
       </label>
     </div>
 
-    <!-- Liked Toppings -->
     <div class="form-group">
       <label>Liked Toppings:</label>
       <input 
@@ -154,7 +145,6 @@
       />
     </div>
 
-    <!-- Comments -->
     <div class="form-group">
       <label>Comments:</label>
       <textarea 
@@ -168,7 +158,6 @@
       </em>
     </div>
 
-    <!-- Actions -->
     <div class="form-actions">
       <button 
         class="btn cancel" 
@@ -190,5 +179,5 @@
       </button>
     </div>
 
-  </form>
+  </form> -->
 </div>

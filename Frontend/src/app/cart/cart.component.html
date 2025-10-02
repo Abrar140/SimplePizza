@@ -4,7 +4,7 @@
     <div *ngFor="let pizza of getCart()" class="cart-card">
       <div class="line">ID: {{ pizza.id }}</div>
       <div class="line">Name: {{ pizza.title }}</div>
-      <div class="line">Price: {{ pizza.price | currency:'PKR' }}</div>
+      <div class="line">Price: {{ pizza.price }}</div>
       <div class="line">Category: {{ pizza.category }}</div>
       <div class="line">Rating: {{ pizza.rating }}</div>
       <div class="line">Sizes: {{ pizza.sizes.join(', ') }}</div>
@@ -16,7 +16,7 @@
   </div>
 
   <div class="total">
-    <strong>Total Price: {{ getTotalPrice() | currency:'PKR' }}</strong>
+    <strong>Total Price: {{ getTotalPrice()  }}</strong>
   </div>
   <div class="footer">Thank you for your order!</div>
 </div>

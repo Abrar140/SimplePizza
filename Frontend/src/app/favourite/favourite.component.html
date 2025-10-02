@@ -9,8 +9,8 @@
       <div class="line">Types: {{ pizza.types.join(', ') }}</div>
       <button (click)="removePizzaFromFavourite(pizza)">Remove</button>
       <button>Add to Cart</button> -->
-      <app-pizza-detail [pizza]="pizza" (buy)="addToCart(pizza) "  [isFavouriteView]="true" (nonfavourite)="removePizzaFromFavourite(pizza)"></app-pizza-detail>
-      <button  [routerLink]="['./']"   [queryParams]="{category:pizza.category}"  queryParamsMerge="merge"> Click ME</button>
+      <!-- <app-pizza-detail [pizza]="pizza" (buy)="addToCart(pizza) "  [isFavouriteView]="true" (nonfavourite)="removePizzaFromFavourite(pizza)"></app-pizza-detail>
+      <button  [routerLink]="['./']"   [queryParams]="{category:pizza.category}"  queryParamsMerge="merge"> Click ME</button> -->
     </div>
   </div>
 
